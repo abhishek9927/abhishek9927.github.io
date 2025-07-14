@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar - Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Abhishek Kumar - Data Analyst with expertise in Excel, SQL, Python, and Power BI. Turning complex data into actionable insights.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">
+                        <i class="fas fa-chart-line mr-2"></i>Abhishek Kumar
+                    </h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu Button -->
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle" class="theme-toggle-btn">
+                        <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                        <i class="fas fa-moon text-blue-400 hidden dark:block"></i>
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="md:hidden mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div
+                class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#education" class="mobile-nav-link">Education</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 to-blue-100 dark:from-gray-900 dark:to-gray-800">
+        </div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Hi, I'm
+                        <span class="text-primary-600 dark:text-primary-400">Abhishek Kumar</span>
+                        <br>
+                        <span class="text-3xl sm:text-4xl lg:text-5xl">Data Analyst</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+                        Data Analyst with hands-on experience in Excel, SQL, Python, and Power BI.
+                        Skilled in data cleaning, analysis, and visualization to support data-driven decision-making.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="./Abhishek_Kumar_Resume.pdf" download class="btn-primary inline-flex items-center">
+                            <i class="fas fa-folder-open mr-2"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn-secondary inline-flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="w-80 h-80 relative">
+                        <img src="assets/data-visualization.svg" alt="Data Visualization"
+                            class="w-full h-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Professional Data Analyst & Business Intelligence Expert</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Data Analyst with hands-on experience in Excel, SQL, Python, and Power BI. Skilled in data
+                            cleaning,
+                            analysis, and visualization to support data-driven decision-making. Proven ability to turn
+                            complex data
+                            into clear insights and actionable results.
+                        </p>
+                        <p class="text-lg leading-relaxed mb-6">
+                            I have analyzed large datasets using SQL and Python to uncover trends and deliver actionable
+                            insights for
+                            business decisions. Created interactive Power BI dashboards and Excel reports to visualize
+                            KPIs for various departments.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Successfully automated data cleaning and transformation processes, reducing manual work by
+                            40%.
+                            Conducted statistical analyses such as A/B testing and regression models to support
+                            marketing and operations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">40%</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-300">Automation Efficiency</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">15%</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-300">Customer Engagement</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">4+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-300">Major Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">8+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-300">Technical Skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Expertise in modern data analysis tools and technologies</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Data Analysis & Visualization -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Data Analysis & Visualization</h3>
+                    <p class="skill-description">Excel, Power BI, Tableau, Google Data Studio for creating compelling
+                        visualizations and insights.</p>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Python</h3>
+                    <p class="skill-description">Pandas, NumPy, Matplotlib, Seaborn for data manipulation, analysis, and
+                        statistical modeling.</p>
+                </div>
+
+                <!-- Database Management -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Database Management</h3>
+                    <p class="skill-description">SQL (MySQL, PostgreSQL, SQLite), Microsoft Access for data extraction
+                        and analysis.</p>
+                </div>
+
+                <!-- Excel -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-excel text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Excel & Reporting</h3>
+                    <p class="skill-description">Power BI Dashboards, Excel Pivot Tables & Charts, automated reporting
+                        workflows.</p>
+                </div>
+
+                <!-- Data Cleaning & Wrangling -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-broom text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Data Cleaning & Wrangling</h3>
+                    <p class="skill-description">Python, Excel Power Query, OpenRefine for data preprocessing and
+                        transformation.</p>
+                </div>
+
+                <!-- Statistical Analysis -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-calculator text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="skill-title">Statistical Analysis</h3>
+                    <p class="skill-description">A/B testing, regression modeling, clustering techniques using Python
+                        and R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">Academic background and professional development</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-2xl text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Bachelor of Science
+                                (BSC)</h3>
+                            <p class="text-primary-600 dark:text-primary-400 font-medium mb-2">FS University</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">April 2023 – April 2026</p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Pursuing comprehensive education in science with focus on analytical thinking and
+                                problem-solving skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-certificate text-2xl text-green-600 dark:text-green-400"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Data Analysis
+                                Certification</h3>
+                            <p class="text-green-600 dark:text-green-400 font-medium mb-2">MSK Institute</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">December 2024 – June 2025</p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Comprehensive training in data analysis methodologies, statistical techniques, and
+                                modern analytics tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing real-world data analysis and visualization projects</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sales Performance Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-4xl text-primary-600 dark:text-primary-400"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Performance Dashboard</h3>
+                        <p class="project-description">
+                            Developed an interactive dashboard using Power BI to track monthly sales, regional
+                            performance, and top-performing products.
+                            Enabled real-time decision-making by integrating SQL database and automating data refresh.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Real-time Data</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Dashboard
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Segmentation -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
+                            <i class="fas fa-users text-4xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Customer Segmentation using Python</h3>
+                        <p class="project-description">
+                            Used Pandas and Scikit-learn to clean data and apply clustering techniques (K-Means) on
+                            customer behaviour data.
+                            Helped marketing team launch targeted campaigns, increasing customer engagement by 15%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">K-Means</span>
+                            <span class="tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Analysis
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza Sales Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900 dark:to-orange-800 flex items-center justify-center">
+                            <i class="fas fa-pizza-slice text-4xl text-orange-600 dark:text-orange-400"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pizza Sales Analysis</h3>
+                        <p class="project-description">
+                            Analyzed pizza order data using SQL to identify peak hours, top-selling items, and revenue
+                            trends.
+                            Created a summary report with charts and recommendations using Excel.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Excel</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Report
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employee Attrition Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center">
+                            <i class="fas fa-user-tie text-4xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Employee Attrition Analysis</h3>
+                        <p class="project-description">
+                            Performed exploratory data analysis to identify key factors affecting employee turnover.
+                            Built a logistic regression model to predict attrition risk and shared actionable insights
+                            with HR.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Logistic Regression</span>
+                            <span class="tag">Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Analysis
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how data can drive your business forward</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8">
+                        I'm always interested in discussing new opportunities, data challenges,
+                        and how analytics can solve business problems. Feel free to reach out!
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary-600 dark:text-primary-400 w-6"></i>
+                            <span class="ml-3">+91 9927713057</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary-600 dark:text-primary-400 w-6"></i>
+                            <a href="mailto:kabhishek69015@gmail.com"
+                                class="ml-3 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">kabhishek69015@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-primary-600 dark:text-primary-400 w-6"></i>
+                            <a href="https://linkedin.com/in/abhishek9927" target="_blank"
+                                class="ml-3 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">LinkedIn
+                                Profile</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-github text-primary-600 dark:text-primary-400 w-6"></i>
+                            <a href="https://github.com/abhishek9927" target="_blank"
+                                class="ml-3 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">GitHub
+                                Portfolio</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-primary-600 dark:text-primary-400 w-6"></i>
+                            <span class="ml-3">BSC, FS University (2023-2026)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user mr-2 text-primary-600 dark:text-primary-400"></i>Name
+                            </label>
+                            <input type="text" id="name" name="name" class="form-input-enhanced"
+                                placeholder="Your Full Name" required>
+                            <div class="form-error hidden" id="name-error">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Please enter your name</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope mr-2 text-primary-600 dark:text-primary-400"></i>Email Address
+                            </label>
+                            <input type="email" id="email" name="email" class="form-input-enhanced"
+                                placeholder="your.email@example.com" required>
+                            <div class="form-error hidden" id="email-error">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Please enter a valid email address</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">
+                                <i class="fas fa-building mr-2 text-primary-600 dark:text-primary-400"></i>Company
+                                (Optional)
+                            </label>
+                            <input type="text" id="company" name="company" class="form-input-enhanced"
+                                placeholder="Your Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type" class="form-label">
+                                <i class="fas fa-tasks mr-2 text-primary-600 dark:text-primary-400"></i>Project Type
+                            </label>
+                            <select id="project-type" name="project-type" class="form-input-enhanced" required>
+                                <option value="">Select Project Type</option>
+                                <option value="data-analysis">Data Analysis & Insights</option>
+                                <option value="dashboard">Dashboard Development</option>
+                                <option value="automation">Report Automation</option>
+                                <option value="consultation">Data Strategy Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-error hidden" id="project-type-error">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Please select a project type</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">
+                                <i class="fas fa-dollar-sign mr-2 text-primary-600 dark:text-primary-400"></i>Budget
+                                Range (Optional)
+                            </label>
+                            <select id="budget" name="budget" class="form-input-enhanced">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="discuss">Prefer to Discuss</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">
+                                <i class="fas fa-calendar mr-2 text-primary-600 dark:text-primary-400"></i>Timeline
+                            </label>
+                            <select id="timeline" name="timeline" class="form-input-enhanced" required>
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-month">Within 1 Month</option>
+                                <option value="2-3-months">2-3 Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                            <div class="form-error hidden" id="timeline-error">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Please select a timeline</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <i class="fas fa-comment mr-2 text-primary-600 dark:text-primary-400"></i>Project
+                                Details
+                            </label>
+                            <textarea id="message" name="message" rows="5" class="form-input-enhanced resize-none"
+                                placeholder="Tell me about your data challenge, goals, and any specific requirements..."
+                                required></textarea>
+                            <div class="form-character-count">
+                                <span id="char-count">0</span>/500 characters
+                            </div>
+                            <div class="form-error hidden" id="message-error">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Please describe your project (minimum 20 characters)</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="text-sm text-gray-600 dark:text-gray-300">
+                                    Subscribe to newsletter for data insights and industry updates
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary-enhanced w-full relative overflow-hidden">
+                                <span class="relative z-10 flex items-center justify-center">
+                                    <i class="fas fa-paper-plane mr-2"></i>Send Message
+                                </span>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-600 transform translate-x-full transition-transform duration-300 group-hover:translate-x-0">
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="form-success hidden" id="form-success">
+                            <div
+                                class="flex items-center p-4 bg-green-100 dark:bg-green-900 border border-green-200 dark:border-green-700 rounded-lg">
+                                <i class="fas fa-check-circle text-green-600 dark:text-green-400 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium text-green-800 dark:text-green-200">Message Sent
+                                        Successfully!</h4>
+                                    <p class="text-sm text-green-600 dark:text-green-300 mt-1">Thank you for reaching
+                                        out. I'll get back to you within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-chart-line mr-2 text-primary-400"></i>Abhishek Kumar
+                    </h3>
+                    <p class="text-gray-300">
+                        Data Analyst transforming complex data into clear insights and actionable results.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="#education" class="text-gray-300 hover:text-white transition-colors">Education</a>
+                        </li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/abhishek9927" target="_blank" class="social-link"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abhishek9927" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:kabhishek69015@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919927713057" class="social-link" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 Data Analyst Portfolio. Built with passion for data and insights.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

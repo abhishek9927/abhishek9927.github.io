@@ -1,0 +1,30 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0.03" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background shapes -->
+  <circle cx="100" cy="150" r="80" fill="url(#grad1)"/>
+  <circle cx="1100" cy="200" r="120" fill="url(#grad2)"/>
+  <circle cx="300" cy="600" r="60" fill="url(#grad1)"/>
+  <circle cx="900" cy="650" r="90" fill="url(#grad2)"/>
+  
+  <!-- Geometric patterns -->
+  <path d="M0,400 Q300,350 600,400 T1200,400" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.1"/>
+  <path d="M0,500 Q300,450 600,500 T1200,500" stroke="#60a5fa" stroke-width="2" fill="none" opacity="0.08"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+</svg>
